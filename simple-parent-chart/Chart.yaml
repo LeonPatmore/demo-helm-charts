@@ -1,0 +1,12 @@
+apiVersion: v2
+name: simple-parent-chart
+version: 1.0.0
+dependencies:
+  - name: "simple-http-chart"
+    repository: "file://../simple-http-chart"
+    version: ~1.x.x
+    alias: server1
+  - name: "simple-http-chart"
+    repository: "file://../simple-http-chart"
+    version: ~1.x.x
+    alias: server2
